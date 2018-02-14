@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.2" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="sun.nio.fs.UnixUserPrincipals.User" project="Apache" 
+    file="/opt/jdk8/jre/lib/rt.jar" binary="true" label="user" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="966" y="0"/>    
+    <execution id="2">      
+      <position height="181" width="50" x="5" y="109"/>    
+    </execution>  
+  </object>  
+  <object id="5" language="java" name="ch.loewenfels.raspberrybuildnotifier.App" project="raspberry-build-notifier" 
+    file="/raspberry-build-notifier/src/main/java/ch/loewenfels/raspberrybuildnotifier/App.java" binary="false" 
+    label="app" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="78" y="0"/>    
+    <execution id="4">      
+      <position height="145" width="0" x="0" y="127"/>    
+    </execution>  
+  </object>  
+  <object id="8" language="java" name="ch.loewenfels.raspberrybuildnotifier.EchoTask" project="raspberry-build-notifier" 
+    file="/raspberry-build-notifier/src/main/java/ch/loewenfels/raspberrybuildnotifier/EchoTask.java" binary="false" 
+    label="echoTask" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="253" y="0"/>    
+    <execution id="7">      
+      <position height="109" width="155" x="164" y="145"/>    
+    </execution>  
+  </object>  
+  <object id="15" language="java" name="ch.loewenfels.raspberrybuildnotifier.serverpoller.GoogleAppEnginePoller" 
+    project="raspberry-build-notifier" 
+    file="/raspberry-build-notifier/src/main/java/ch/loewenfels/raspberrybuildnotifier/serverpoller/GoogleAppEnginePoller.java" 
+    binary="false" label="googleAppEnginePoller" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="447" y="0"/>    
+    <execution id="10">      
+      <position height="18" width="207" x="323" y="163"/>    
+    </execution>  
+  </object>  
+  <object id="16" language="java" name="humannotifier.ConsoleNotifier" project="raspberry-build-notifier" 
+    file="/raspberry-build-notifier/src/main/java/humannotifier/ConsoleNotifier.java" binary="false" 
+    label="consoleNotifier" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="692" y="0"/>    
+    <execution id="12">      
+      <position height="18" width="110" x="534" y="193"/>    
+    </execution>  
+  </object>  
+  <object id="17" language="java" name="humannotifier.AudioNotifier" project="raspberry-build-notifier" 
+    file="/raspberry-build-notifier/src/main/java/humannotifier/AudioNotifier.java" binary="false" label="audioNotifier" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="828" y="0"/>    
+    <execution id="14">      
+      <position height="18" width="97" x="648" y="218"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="main(java.lang.String[]):void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="6" operation="EchoTask()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="7"/>  
+  </message>  
+  <message id="9" operation="GoogleAppEnginePoller()" asynchronous="false">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="ConsoleNotifier()" asynchronous="false">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="AudioNotifier()" asynchronous="false">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>
+</sequence-diagram>

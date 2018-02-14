@@ -3,25 +3,28 @@ package humannotifier;
 import java.io.File;
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
+
 import ch.loewenfels.raspberrybuildnotifier.BuildInformationDto;
+import ch.loewenfels.raspberrybuildnotifier.BuildInformationDto.JobStatus;
 
 public class AudioNotifier extends HumanNotifier {
+    private static final Logger LOGGER = Logger.getLogger(AudioNotifier.class);
+
     @Override
     protected void notifyHumanBeing(final BuildInformationDto dto) {
-        switch (dto.jobStatus) {
-        case FAILURE: {
+        if (dto.jobStatus == JobStatus.FAILURE) {
             final String wavName = "computer-information.wav";
             final ClassLoader classLoader = getClass().getClassLoader();
             final File wavFile = new File(classLoader.getResource(wavName).getFile());
-            final Process process = null;
+            //final Process process = null;
             try {
                 if (dto.jobStatus.equals(BuildInformationDto.JobStatus.FAILURE)) {
                     final ProcessBuilder processBuilder = new ProcessBuilder("bash", "-c", "aplay " + wavFile.getAbsolutePath());
                     processBuilder.start();
                 }
             } catch (final IOException e) {
-                System.err.println("IO Error occurred on exec process");
-                e.printStackTrace();
+                LOGGER.error("IO Error occurred on exec process", e);
             }
             // try(BufferedWriter writer = new BufferedWriter(new
             // OutputStreamWriter(process.getOutputStream()))) {
@@ -31,10 +34,6 @@ public class AudioNotifier extends HumanNotifier {
             // System.err.println("IO error occureed on write to sysin");
             // e.printStackTrace();
             // }
-        }
-        case SUCCESS: {
-            ;
-        }
         }
     }
 }

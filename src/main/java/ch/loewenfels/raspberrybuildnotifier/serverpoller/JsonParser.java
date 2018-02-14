@@ -9,6 +9,7 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
+import org.apache.log4j.Logger;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
 
@@ -16,6 +17,7 @@ import ch.loewenfels.raspberrybuildnotifier.BuildInformationDto;
 
 public class JsonParser {
     private static final String USER_AGENT = "Mozilla/5.0";
+    private static final Logger LOGGER = Logger.getLogger(JsonParser.class);
 
     public BuildInformationDto get() {
         try {
@@ -25,23 +27,16 @@ public class JsonParser {
             final HttpGet request = new HttpGet(url);
             request.addHeader("User-Agent", USER_AGENT);
             final HttpResponse response = client.execute(request);
-            System.out.println("Response Code : " + response.getStatusLine().getStatusCode());
+            LOGGER.info("Response Code : " + response.getStatusLine().getStatusCode());
             final String jsonData = EntityUtils.toString(response.getEntity());
             final JSONObject obj = new JSONObject(jsonData);
-            System.out.println("name: " + obj.getString("name"));
+            LOGGER.info("name: " + obj.getString("name"));
             final JSONObject build = obj.getJSONObject("build");
-            System.out.println("timestamp: " + build.getString("timestamp"));
-            System.out.println("status: " + build.getString("status"));
+            LOGGER.info("timestamp: " + build.getString("timestamp"));
+            LOGGER.info("status: " + build.getString("status"));
             return new BuildInformationDto("a", build.getString("status"), LocalDateTime.now());
-        } catch (final JSONException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (final ParseException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (final IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+        } catch (final JSONException | ParseException | IOException e) {
+            LOGGER.error(e);
         }
         return new BuildInformationDto("a", "SUCCESS", LocalDateTime.now());
     }
