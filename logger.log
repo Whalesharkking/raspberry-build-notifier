@@ -41,3 +41,143 @@
 </body></html>
 
 2018-02-14 10:23:25 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS resultDateTime: 2018-02-14T10:23:25.469 ]
+2018-02-14 10:28:25 INFO  EchoTask:27 - Wed Feb 14 10:28:25 CET 2018 running ...
+2018-02-14 10:28:25 INFO  JsonParser:30 - Response Code : 500
+2018-02-14 10:28:25 ERROR JsonParser:39 - org.codehaus.jettison.json.JSONException: A JSONObject text must begin with '{' at character 2 of 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>500 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+2018-02-14 10:28:25 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS resultDateTime: 2018-02-14T10:28:25.471 ]
+2018-02-14 10:33:25 INFO  EchoTask:27 - Wed Feb 14 10:33:25 CET 2018 running ...
+2018-02-14 10:33:25 INFO  JsonParser:30 - Response Code : 500
+2018-02-14 10:33:25 ERROR JsonParser:39 - org.codehaus.jettison.json.JSONException: A JSONObject text must begin with '{' at character 2 of 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>500 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+2018-02-14 10:33:25 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS resultDateTime: 2018-02-14T10:33:25.424 ]
+2018-02-14 10:38:25 INFO  EchoTask:27 - Wed Feb 14 10:38:25 CET 2018 running ...
+2018-02-14 10:38:25 INFO  JsonParser:30 - Response Code : 500
+2018-02-14 10:38:25 ERROR JsonParser:39 - org.codehaus.jettison.json.JSONException: A JSONObject text must begin with '{' at character 2 of 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>500 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+2018-02-14 10:38:25 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS resultDateTime: 2018-02-14T10:38:25.473 ]
+2018-02-14 10:43:25 INFO  EchoTask:27 - Wed Feb 14 10:43:25 CET 2018 running ...
+2018-02-14 10:43:25 INFO  JsonParser:30 - Response Code : 500
+2018-02-14 10:43:25 ERROR JsonParser:39 - org.codehaus.jettison.json.JSONException: A JSONObject text must begin with '{' at character 2 of 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>500 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+2018-02-14 10:43:25 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS resultDateTime: 2018-02-14T10:43:25.413 ]
+2018-02-14 10:48:25 INFO  EchoTask:27 - Wed Feb 14 10:48:25 CET 2018 running ...
+2018-02-14 10:48:25 INFO  JsonParser:30 - Response Code : 500
+2018-02-14 10:48:25 ERROR JsonParser:39 - org.codehaus.jettison.json.JSONException: A JSONObject text must begin with '{' at character 2 of 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>500 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+2018-02-14 10:48:25 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS resultDateTime: 2018-02-14T10:48:25.474 ]
+2018-02-14 10:53:25 INFO  EchoTask:27 - Wed Feb 14 10:53:25 CET 2018 running ...
+2018-02-14 10:53:25 INFO  JsonParser:30 - Response Code : 500
+2018-02-14 10:53:25 ERROR JsonParser:39 - org.codehaus.jettison.json.JSONException: A JSONObject text must begin with '{' at character 2 of 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>500 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+2018-02-14 10:53:25 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS resultDateTime: 2018-02-14T10:53:25.428 ]
+2018-02-14 10:58:25 INFO  EchoTask:27 - Wed Feb 14 10:58:25 CET 2018 running ...
+2018-02-14 10:58:25 INFO  JsonParser:30 - Response Code : 500
+2018-02-14 10:58:25 ERROR JsonParser:39 - org.codehaus.jettison.json.JSONException: A JSONObject text must begin with '{' at character 2 of 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>500 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+2018-02-14 10:58:25 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS resultDateTime: 2018-02-14T10:58:25.445 ]
+2018-02-14 11:03:25 INFO  EchoTask:27 - Wed Feb 14 11:03:25 CET 2018 running ...
+2018-02-14 11:03:25 INFO  JsonParser:30 - Response Code : 500
+2018-02-14 11:03:25 ERROR JsonParser:39 - org.codehaus.jettison.json.JSONException: A JSONObject text must begin with '{' at character 2 of 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>500 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+2018-02-14 11:03:25 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS resultDateTime: 2018-02-14T11:03:25.473 ]
+2018-02-14 11:08:25 INFO  EchoTask:27 - Wed Feb 14 11:08:25 CET 2018 running ...
+2018-02-14 11:08:25 INFO  JsonParser:30 - Response Code : 500
+2018-02-14 11:08:25 ERROR JsonParser:39 - org.codehaus.jettison.json.JSONException: A JSONObject text must begin with '{' at character 2 of 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>500 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+2018-02-14 11:08:25 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS resultDateTime: 2018-02-14T11:08:25.468 ]
+2018-02-14 11:13:25 INFO  EchoTask:27 - Wed Feb 14 11:13:25 CET 2018 running ...
+2018-02-14 11:13:25 INFO  JsonParser:30 - Response Code : 500
+2018-02-14 11:13:25 ERROR JsonParser:39 - org.codehaus.jettison.json.JSONException: A JSONObject text must begin with '{' at character 2 of 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>500 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered an error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+2018-02-14 11:13:25 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS resultDateTime: 2018-02-14T11:13:25.408 ]

@@ -18,6 +18,9 @@ import ch.loewenfels.raspberrybuildnotifier.BuildInformationDto;
 public class JsonParser {
     private static final String USER_AGENT = "Mozilla/5.0";
     private static final Logger LOGGER = Logger.getLogger(JsonParser.class);
+    private String buildName;
+    private String timestamp;
+    private String status;
 
     public BuildInformationDto get() {
         try {
@@ -32,12 +35,19 @@ public class JsonParser {
             final JSONObject obj = new JSONObject(jsonData);
             LOGGER.info("name: " + obj.getString("name"));
             final JSONObject build = obj.getJSONObject("build");
-            LOGGER.info("timestamp: " + build.getString("timestamp"));
-            LOGGER.info("status: " + build.getString("status"));
-            return new BuildInformationDto("a", build.getString("status"), LocalDateTime.now());
+            setBuildInformation(build);
+            LOGGER.info("timestamp: " + timestamp);
+            LOGGER.info("status: " + status);
+            return new BuildInformationDto(buildName, status, LocalDateTime.now());
         } catch (final JSONException | ParseException | IOException e) {
             LOGGER.error(e);
         }
-        return new BuildInformationDto("a", "SUCCESS", LocalDateTime.now());
+        return new BuildInformationDto(buildName, "ERROR", LocalDateTime.now());
+    }
+
+    private void setBuildInformation(final JSONObject build) throws JSONException {
+        buildName = build.getString("buildName");
+        timestamp = build.getString("status");
+        status = build.getString("timestamp");
     }
 }
