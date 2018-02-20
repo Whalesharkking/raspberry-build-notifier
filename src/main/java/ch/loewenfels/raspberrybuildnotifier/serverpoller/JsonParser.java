@@ -10,8 +10,6 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
-import org.codehaus.jettison.json.JSONException;
-import org.codehaus.jettison.json.JSONObject;
 
 import ch.loewenfels.raspberrybuildnotifier.BuildInformationDto;
 
@@ -29,13 +27,13 @@ public class JsonParser {
             final HttpResponse response = client.execute(request);
             LOGGER.info("Response Code : " + response.getStatusLine().getStatusCode());
             final String jsonData = EntityUtils.toString(response.getEntity());
-            final JSONObject obj = new JSONObject("{" + jsonData);
-            LOGGER.info("name: " + obj.getString("name"));
-            final JSONObject build = obj.getJSONObject("build");
-            LOGGER.info("timestamp: " + build.getString("timestamp"));
-            LOGGER.info("status: " + build.getString("status"));
-            return new BuildInformationDto("a", build.getString("status"), LocalDateTime.now());
-        } catch (final JSONException | ParseException | IOException e) {
+            //            final JSONObject obj = new JSONObject(jsonData);
+            //            LOGGER.info("name: " + obj.getString("name"));
+            //            final JSONObject build = obj.getJSONObject("build");
+            //            LOGGER.info("timestamp: " + build.getString("timestamp"));
+            //            LOGGER.info("status: " + build.getString("status"));
+            return new BuildInformationDto("a", jsonData, LocalDateTime.now());
+        } catch (final ParseException | IOException e) {
             LOGGER.error(e);
         }
         return new BuildInformationDto("Test", "FAILURE", LocalDateTime.now());
