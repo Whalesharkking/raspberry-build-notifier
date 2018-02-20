@@ -32,7 +32,7 @@ public class JsonParser {
             LOGGER.info("Response Code : " + response.getStatusLine().getStatusCode());
             //final String jsonData = EntityUtils.toString(response.getEntity());
             // final JSONObject obj = new JSONObject(jsonData);
-            status = response.getFirstHeader("param").getValue();
+            status = request.getParams().getParameter("param").toString();
             //            LOGGER.info("name: " + obj.getString("name"));
             //            final JSONObject build = obj.getJSONObject("build");
             //            setBuildInformation(build);
