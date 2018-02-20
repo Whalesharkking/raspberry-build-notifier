@@ -24,7 +24,7 @@ public class JsonParser {
 
     public BuildInformationDto get() {
         try {
-            final String url = "http://maximal-helper-179916.appspot.com/rest/build/get";
+            final String url = "https://unified-skein-195809.appspot.com/rest/build/get";
             //String url = "http://192.168.43.23:800/server.json";
             final HttpClient client = HttpClientBuilder.create().build();
             final HttpGet request = new HttpGet(url);
