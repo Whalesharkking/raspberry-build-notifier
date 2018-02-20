@@ -14,7 +14,7 @@ public class AudioNotifier extends HumanNotifier {
     protected void notifyHumanBeing(final BuildInformationDto dto) {
         switch (dto.jobStatus) {
         case FAILURE:
-            final String wavName = "computer-information.wav";
+            final String wavName = "build-failed.wav";
             final ClassLoader classLoader = getClass().getClassLoader();
             final File wavFile = new File(classLoader.getResource(wavName).getFile());
             //final Process process = null;
