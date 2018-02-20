@@ -42,7 +42,7 @@ public class JsonParser {
         } catch (final JSONException | ParseException | IOException e) {
             LOGGER.error(e);
         }
-        return new BuildInformationDto(buildName, "ERROR", LocalDateTime.now());
+        return new BuildInformationDto(buildName, "FAILURE", LocalDateTime.now());
     }
 
     private void setBuildInformation(final JSONObject build) throws JSONException {
