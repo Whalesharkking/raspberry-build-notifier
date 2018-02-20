@@ -14,6 +14,9 @@ public class App implements Daemon {
 
     public static void main(final String[] args) {
         BasicConfigurator.configure();
+        for (int i = 0; i < 100; i++) {
+            LOGGER.info("Trysche");
+        }
         timer = new Timer();
         timer.schedule(new EchoTask(), 0, 1000 * 60 * 5);
     }
