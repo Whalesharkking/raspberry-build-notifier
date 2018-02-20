@@ -38,6 +38,7 @@ public class JsonParser {
             //            setBuildInformation(build);
             //            LOGGER.info("timestamp: " + timestamp);
             //            LOGGER.info("status: " + status);
+            //
             return new BuildInformationDto("testee", status, LocalDateTime.now());
         } catch (final ParseException | IOException e) {
             LOGGER.error(e);
