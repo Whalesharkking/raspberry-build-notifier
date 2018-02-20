@@ -33,12 +33,13 @@ public class JsonParser {
             LOGGER.info("Response Code : " + response.getStatusLine().getStatusCode());
             final String jsonData = EntityUtils.toString(response.getEntity());
             final JSONObject obj = new JSONObject(jsonData);
-            LOGGER.info("name: " + obj.getString("name"));
-            final JSONObject build = obj.getJSONObject("build");
-            setBuildInformation(build);
-            LOGGER.info("timestamp: " + timestamp);
-            LOGGER.info("status: " + status);
-            return new BuildInformationDto(buildName, status, LocalDateTime.now());
+            status = (String) obj.get("param");
+            //            LOGGER.info("name: " + obj.getString("name"));
+            //            final JSONObject build = obj.getJSONObject("build");
+            //            setBuildInformation(build);
+            //            LOGGER.info("timestamp: " + timestamp);
+            //            LOGGER.info("status: " + status);
+            return new BuildInformationDto("testee", status, LocalDateTime.now());
         } catch (final JSONException | ParseException | IOException e) {
             LOGGER.error(e);
         }
