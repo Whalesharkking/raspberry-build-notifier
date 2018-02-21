@@ -27,6 +27,7 @@ public class JsonParser {
             final HttpResponse response = client.execute(request);
             LOGGER.info("Response Code : " + response.getStatusLine().getStatusCode());
             final String jsonData = EntityUtils.toString(response.getEntity());
+            LOGGER.info("Paramdata" + jsonData);
             //            final JSONObject obj = new JSONObject(jsonData);
             //            LOGGER.info("name: " + obj.getString("name"));
             //            final JSONObject build = obj.getJSONObject("build");
