@@ -13,30 +13,31 @@ import org.apache.log4j.Logger;
 
 import ch.loewenfels.raspberrybuildnotifier.BuildInformationDto;
 
+import com.google.gson.Gson;
+
 public class JsonParser {
     private static final String USER_AGENT = "Mozilla/5.0";
     private static final Logger LOGGER = Logger.getLogger(JsonParser.class);
 
     public BuildInformationDto get() {
         try {
-            final String url = "https://unified-skein-195809.appspot.com/rest/build/get";
-            //String url = "http://192.168.43.23:800/server.json";
+            final Gson gson = new Gson();
+            final String url = "https://unified-skein-195809.appspot.com/rest/build/get/a";
             final HttpClient client = HttpClientBuilder.create().build();
             final HttpGet request = new HttpGet(url);
             request.addHeader("User-Agent", USER_AGENT);
             final HttpResponse response = client.execute(request);
             LOGGER.info("Response Code : " + response.getStatusLine().getStatusCode());
-            final String jsonData = EntityUtils.toString(response.getEntity());
-            LOGGER.info("Paramdata" + jsonData);
-            //            final JSONObject obj = new JSONObject(jsonData);
+            final String string = EntityUtils.toString(response.getEntity());
+            final BuildInformationDto buildInformationDto = gson.fromJson(string, BuildInformationDto.class);
             //            LOGGER.info("name: " + obj.getString("name"));
             //            final JSONObject build = obj.getJSONObject("build");
             //            LOGGER.info("timestamp: " + build.getString("timestamp"));
             //            LOGGER.info("status: " + build.getString("status"));
-            return new BuildInformationDto("a", jsonData, LocalDateTime.now());
+            return new BuildInformationDto(buildInformationDto.jobName, buildInformationDto.jobStatus, buildInformationDto.resultDateTime);
         } catch (final ParseException | IOException e) {
             LOGGER.error(e);
         }
-        return new BuildInformationDto("Test", "FAILURE", LocalDateTime.now());
+        return new BuildInformationDto("ERROR", "ERROR", LocalDateTime.now().toString());
     }
 }
