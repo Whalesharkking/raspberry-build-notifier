@@ -12,14 +12,14 @@ public class AudioNotifier extends HumanNotifier {
 
     @Override
     protected void notifyHumanBeing(final BuildInformationDto dto) {
-        switch (dto.jobStatus) {
+        switch (dto.getJobStatus()) {
         case FAILURE:
             final String wavName = "build-failed.wav";
             final ClassLoader classLoader = getClass().getClassLoader();
             final File wavFile = new File(classLoader.getResource(wavName).getFile());
             //final Process process = null;
             try {
-                if (dto.jobStatus.equals(BuildInformationDto.JobStatus.FAILURE)) {
+                if (dto.getJobStatus().equals(BuildInformationDto.JobStatus.FAILURE)) {
                     final ProcessBuilder processBuilder = new ProcessBuilder("bash", "-c", "aplay " + wavFile.getAbsolutePath());
                     processBuilder.start();
                 }
