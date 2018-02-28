@@ -1,37 +1,26 @@
 package ch.loewenfels.raspberrybuildnotifier;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 import com.google.gson.annotations.SerializedName;
 
 public class BuildInformationDto {
     public enum JobStatus {
-            @SerializedName("Success")
-            SUCCESS, @SerializedName("FAILURE")
-            FAILURE, @SerializedName("ERROR")
-            ERROR
+            @SerializedName("SUCCESS")
+            SUCCESS, FAILURE, ERROR
     }
 
     private String jobName;
     private JobStatus jobStatus;
-    private LocalDateTime jobTime;
+    private Date jobTime;
 
-    public BuildInformationDto(final String name, final JobStatus jobStatus, final LocalDateTime jobTime) {
-        this.jobName = name;
+    public BuildInformationDto(final String jobName, final JobStatus jobStatus, final Date jobTime) {
+        this.jobName = jobName;
         this.jobStatus = jobStatus;
         this.jobTime = jobTime;
     }
 
-    public BuildInformationDto(final String name, final String jobStatus, final LocalDateTime jobTime) {
-        this(name, JobStatus.valueOf(jobStatus), jobTime);
-    }
-
     public BuildInformationDto() {
-    }
-
-    @Override
-    public String toString() {
-        return "[jobname: " + jobName + " jobStatus: " + jobStatus + " jobTime: " + jobTime + " ]";
     }
 
     public String getJobName() {
@@ -50,11 +39,11 @@ public class BuildInformationDto {
         this.jobStatus = jobStatus;
     }
 
-    public LocalDateTime getJobTime() {
+    public Date getJobTime() {
         return jobTime;
     }
 
-    public void setJobTime(final LocalDateTime jobTime) {
+    public void setJobTime(final Date jobTime) {
         this.jobTime = jobTime;
     }
 }

@@ -273,3 +273,141 @@
 2018-02-27 13:00:12 INFO  EchoTask:27 - Tue Feb 27 13:00:12 CET 2018 running ...
 2018-02-27 13:00:12 INFO  JsonParser:33 - Response Code : 200
 2018-02-27 13:00:12 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS jobTime: 2014-03-10T18:46:40 ]
+2018-02-27 13:04:05 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-27 13:04:05 INFO  EchoTask:27 - Tue Feb 27 13:04:05 CET 2018 running ...
+2018-02-27 13:04:05 INFO  JsonParser:33 - Response Code : 200
+2018-02-27 13:04:05 INFO  JsonParser:35 - {"jobName":"a","jobStatus":"Success","jobTime":"2014-03-10T18:46:40.000Z"}
+2018-02-27 13:05:12 INFO  EchoTask:27 - Tue Feb 27 13:05:12 CET 2018 running ...
+2018-02-27 13:05:12 INFO  JsonParser:33 - Response Code : 200
+2018-02-27 13:05:12 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS jobTime: 2014-03-10T18:46:40 ]
+2018-02-27 13:10:12 INFO  EchoTask:27 - Tue Feb 27 13:10:12 CET 2018 running ...
+2018-02-27 13:10:12 INFO  JsonParser:33 - Response Code : 200
+2018-02-27 13:10:12 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS jobTime: 2014-03-10T18:46:40 ]
+2018-02-27 13:15:12 INFO  EchoTask:27 - Tue Feb 27 13:15:12 CET 2018 running ...
+2018-02-27 13:15:12 INFO  JsonParser:33 - Response Code : 200
+2018-02-27 13:15:12 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS jobTime: 2014-03-10T18:46:40 ]
+2018-02-27 13:20:12 INFO  EchoTask:27 - Tue Feb 27 13:20:12 CET 2018 running ...
+2018-02-27 13:20:12 INFO  JsonParser:33 - Response Code : 200
+2018-02-27 13:20:12 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS jobTime: 2014-03-10T18:46:40 ]
+2018-02-27 13:25:12 INFO  EchoTask:27 - Tue Feb 27 13:25:12 CET 2018 running ...
+2018-02-27 13:25:12 INFO  JsonParser:33 - Response Code : 200
+2018-02-27 13:25:12 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS jobTime: 2014-03-10T18:46:40 ]
+2018-02-27 13:30:12 INFO  EchoTask:27 - Tue Feb 27 13:30:12 CET 2018 running ...
+2018-02-27 13:30:12 INFO  JsonParser:33 - Response Code : 200
+2018-02-27 13:30:12 INFO  ConsoleNotifier:12 - Result of last poll: [jobname: a jobStatus: SUCCESS jobTime: 2014-03-10T18:46:40 ]
+2018-02-27 13:35:12 INFO  EchoTask:27 - Tue Feb 27 13:35:12 CET 2018 running ...
+2018-02-27 13:35:12 INFO  JsonParser:33 - Response Code : 200
+2018-02-27 14:26:43 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-27 14:26:43 INFO  EchoTask:27 - Tue Feb 27 14:26:43 CET 2018 running ...
+2018-02-27 14:26:44 INFO  JsonParser:33 - Response Code : 200
+2018-02-27 14:26:44 INFO  JsonParser:35 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519737716465}
+2018-02-27 14:28:11 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-27 14:28:11 INFO  EchoTask:27 - Tue Feb 27 14:28:11 CET 2018 running ...
+2018-02-27 14:28:12 INFO  JsonParser:34 - Response Code : 200
+2018-02-27 14:28:12 INFO  JsonParser:36 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519737716465}
+2018-02-27 14:29:27 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-27 14:29:27 INFO  EchoTask:27 - Tue Feb 27 14:29:27 CET 2018 running ...
+2018-02-27 14:29:27 INFO  JsonParser:30 - Response Code : 200
+2018-02-27 14:29:27 INFO  JsonParser:32 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519737716465}
+2018-02-27 14:30:48 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-27 14:30:48 INFO  EchoTask:27 - Tue Feb 27 14:30:48 CET 2018 running ...
+2018-02-27 14:30:49 INFO  JsonParser:30 - Response Code : 200
+2018-02-27 14:30:49 INFO  JsonParser:32 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519737716465}
+2018-02-27 14:32:53 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-27 14:32:53 INFO  EchoTask:27 - Tue Feb 27 14:32:53 CET 2018 running ...
+2018-02-27 14:32:54 INFO  JsonParser:31 - Response Code : 200
+2018-02-27 14:32:54 INFO  JsonParser:33 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519737716465}
+2018-02-27 14:33:54 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-27 14:33:54 INFO  EchoTask:27 - Tue Feb 27 14:33:54 CET 2018 running ...
+2018-02-27 14:33:55 INFO  JsonParser:32 - Response Code : 200
+2018-02-27 14:33:55 INFO  JsonParser:34 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519737716465}
+2018-02-27 14:35:00 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-27 14:35:00 INFO  EchoTask:27 - Tue Feb 27 14:35:00 CET 2018 running ...
+2018-02-27 14:35:01 INFO  JsonParser:33 - Response Code : 200
+2018-02-27 14:35:01 INFO  JsonParser:35 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519737716465}
+2018-02-27 14:36:39 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-27 14:36:39 INFO  EchoTask:27 - Tue Feb 27 14:36:39 CET 2018 running ...
+2018-02-27 14:36:40 INFO  JsonParser:32 - Response Code : 200
+2018-02-27 14:36:40 INFO  JsonParser:34 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519737716465}
+2018-02-27 14:43:20 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-27 14:43:20 INFO  EchoTask:27 - Tue Feb 27 14:43:20 CET 2018 running ...
+2018-02-27 14:43:20 INFO  JsonParser:32 - Response Code : 200
+2018-02-27 14:43:20 INFO  JsonParser:34 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519737716465}
+2018-02-27 14:47:09 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-27 14:47:09 INFO  EchoTask:27 - Tue Feb 27 14:47:09 CET 2018 running ...
+2018-02-27 14:47:10 INFO  JsonParser:32 - Response Code : 200
+2018-02-27 14:47:10 INFO  JsonParser:34 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519737716465}
+2018-02-27 14:47:45 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-27 14:47:45 INFO  EchoTask:27 - Tue Feb 27 14:47:45 CET 2018 running ...
+2018-02-27 14:47:45 INFO  JsonParser:32 - Response Code : 200
+2018-02-27 14:47:45 INFO  JsonParser:34 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519737716465}
+2018-02-27 14:48:42 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-27 14:48:42 INFO  EchoTask:27 - Tue Feb 27 14:48:42 CET 2018 running ...
+2018-02-27 14:48:49 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-27 14:48:49 INFO  EchoTask:27 - Tue Feb 27 14:48:49 CET 2018 running ...
+2018-02-27 14:48:50 INFO  JsonParser:32 - Response Code : 200
+2018-02-27 14:48:50 INFO  JsonParser:34 - 
+2018-02-27 14:48:52 INFO  JsonParser:32 - Response Code : 200
+2018-02-27 14:48:52 INFO  JsonParser:34 - 
+2018-02-27 14:49:00 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-27 14:49:00 INFO  EchoTask:27 - Tue Feb 27 14:49:00 CET 2018 running ...
+2018-02-27 14:49:01 INFO  JsonParser:32 - Response Code : 200
+2018-02-27 14:49:01 INFO  JsonParser:34 - 
+2018-02-27 14:53:43 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-27 14:53:43 INFO  EchoTask:27 - Tue Feb 27 14:53:43 CET 2018 running ...
+2018-02-27 14:53:43 INFO  JsonParser:32 - Response Code : 200
+2018-02-27 14:53:43 INFO  JsonParser:34 - 
+2018-02-28 09:08:51 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-28 09:08:51 INFO  EchoTask:27 - Wed Feb 28 09:08:51 CET 2018 running ...
+2018-02-28 09:08:51 INFO  JsonParser:32 - Response Code : 200
+2018-02-28 09:08:51 INFO  JsonParser:34 - 
+2018-02-28 09:10:32 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-28 09:10:32 INFO  EchoTask:27 - Wed Feb 28 09:10:32 CET 2018 running ...
+2018-02-28 09:10:33 INFO  JsonParser:32 - Response Code : 200
+2018-02-28 09:10:33 INFO  JsonParser:34 - 
+2018-02-28 09:11:02 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-28 09:11:02 INFO  EchoTask:27 - Wed Feb 28 09:11:02 CET 2018 running ...
+2018-02-28 09:11:03 INFO  JsonParser:32 - Response Code : 200
+2018-02-28 09:11:03 INFO  JsonParser:34 - 
+2018-02-28 09:13:17 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-28 09:13:17 INFO  EchoTask:27 - Wed Feb 28 09:13:17 CET 2018 running ...
+2018-02-28 09:13:18 INFO  JsonParser:32 - Response Code : 200
+2018-02-28 09:13:18 INFO  JsonParser:34 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519737716465}
+2018-02-28 09:14:40 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-28 09:14:40 INFO  EchoTask:27 - Wed Feb 28 09:14:40 CET 2018 running ...
+2018-02-28 09:14:41 INFO  JsonParser:32 - Response Code : 200
+2018-02-28 09:14:41 INFO  JsonParser:34 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519737716465}
+2018-02-28 09:17:29 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-28 09:17:29 INFO  EchoTask:27 - Wed Feb 28 09:17:29 CET 2018 running ...
+2018-02-28 09:17:30 INFO  JsonParser:32 - Response Code : 200
+2018-02-28 09:17:30 INFO  JsonParser:34 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":946684800}
+2018-02-28 09:18:55 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-28 09:18:55 INFO  EchoTask:27 - Wed Feb 28 09:18:55 CET 2018 running ...
+2018-02-28 09:18:56 INFO  JsonParser:32 - Response Code : 200
+2018-02-28 09:18:56 INFO  JsonParser:34 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1335205543511}
+2018-02-28 09:19:14 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-28 09:19:14 INFO  EchoTask:27 - Wed Feb 28 09:19:14 CET 2018 running ...
+2018-02-28 09:19:14 INFO  JsonParser:32 - Response Code : 200
+2018-02-28 09:19:14 INFO  JsonParser:34 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1335205543511}
+2018-02-28 09:24:25 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-28 09:24:25 INFO  EchoTask:27 - Wed Feb 28 09:24:25 CET 2018 running ...
+2018-02-28 09:24:26 INFO  JsonParser:32 - Response Code : 200
+2018-02-28 09:24:26 INFO  JsonParser:34 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1335205543511}
+2018-02-28 09:25:44 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-28 09:25:44 INFO  EchoTask:27 - Wed Feb 28 09:25:44 CET 2018 running ...
+2018-02-28 09:25:44 INFO  JsonParser:32 - Response Code : 200
+2018-02-28 09:25:44 INFO  JsonParser:34 - 
+2018-02-28 10:10:22 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-28 10:10:22 INFO  EchoTask:27 - Wed Feb 28 10:10:22 CET 2018 running ...
+2018-02-28 10:10:23 INFO  JsonParser:32 - Response Code : 200
+2018-02-28 10:10:23 INFO  JsonParser:34 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519808896475}
+2018-02-28 10:18:29 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-28 10:18:29 INFO  EchoTask:27 - Wed Feb 28 10:18:29 CET 2018 running ...
+2018-02-28 10:18:29 INFO  JsonParser:35 - Response Code : 200
+2018-02-28 10:18:29 INFO  JsonParser:37 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519808896475}
+2018-02-28 10:18:29 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@a041411
+2018-02-28 10:19:37 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-28 10:19:37 INFO  EchoTask:27 - Wed Feb 28 10:19:37 CET 2018 running ...
+2018-02-28 10:19:38 INFO  JsonParser:35 - Response Code : 200
+2018-02-28 10:19:38 INFO  JsonParser:37 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519808896475}
+2018-02-28 10:19:38 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@32293b23

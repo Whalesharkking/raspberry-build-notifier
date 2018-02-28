@@ -12,6 +12,7 @@ public class AudioNotifier extends HumanNotifier {
 
     @Override
     protected void notifyHumanBeing(final BuildInformationDto dto) {
+        System.out.println(dto.getJobName() + " " + dto.getJobStatus());
         switch (dto.getJobStatus()) {
         case FAILURE:
             final String wavName = "build-failed.wav";
