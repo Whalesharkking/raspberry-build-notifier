@@ -12,10 +12,9 @@ public class AudioNotifier extends HumanNotifier {
 
     @Override
     protected void notifyHumanBeing(final BuildInformationDto dto) {
-        System.out.println(dto.getJobName() + " " + dto.getJobStatus());
         switch (dto.getJobStatus()) {
         case FAILURE:
-            final String wavName = "build-failed.wav";
+            final String wavName = "computer-information.mp3";
             final ClassLoader classLoader = getClass().getClassLoader();
             final File wavFile = new File(classLoader.getResource(wavName).getFile());
             //final Process process = null;
@@ -32,6 +31,18 @@ public class AudioNotifier extends HumanNotifier {
             break;
         case ERROR:
             LOGGER.error("Job Status Error");
+            final String errorNofierName = "errorNofier.mp3";
+            final ClassLoader classLoaderError = getClass().getClassLoader();
+            final File errorNofierFile = new File(classLoaderError.getResource(errorNofierName).getFile());
+            //final Process process = null;
+            try {
+                if (dto.getJobStatus().equals(BuildInformationDto.JobStatus.ERROR)) {
+                    final ProcessBuilder processBuilder = new ProcessBuilder("bash", "-c", "aplay " + errorNofierFile.getAbsolutePath());
+                    processBuilder.start();
+                }
+            } catch (final IOException e) {
+                LOGGER.error("IO Error occurred on exec process", e);
+            }
             break;
         }
     }

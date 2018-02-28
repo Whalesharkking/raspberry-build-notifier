@@ -2,11 +2,8 @@ package ch.loewenfels.raspberrybuildnotifier;
 
 import java.util.Date;
 
-import com.google.gson.annotations.SerializedName;
-
 public class BuildInformationDto {
     public enum JobStatus {
-            @SerializedName("SUCCESS")
             SUCCESS, FAILURE, ERROR
     }
 

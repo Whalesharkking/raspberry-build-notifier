@@ -539,3 +539,105 @@ JobTime: 28.02.2018 10:08:16
 2018-02-28 11:02:07 INFO  JsonParser:36 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519808896475}
 2018-02-28 11:02:07 INFO  JsonParser:39 - JobName: SampleJobName	JobStatus: SUCCESS	JobTime: 28.02.2018 10:08:16
 2018-02-28 11:02:07 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@a041411
+2018-02-28 11:03:01 INFO  EchoTask:27 - Wed Feb 28 11:03:01 CET 2018 running ...
+2018-02-28 11:03:01 INFO  JsonParser:37 - Response Code : 200
+2018-02-28 11:03:01 INFO  JsonParser:39 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519808896475}
+2018-02-28 11:03:01 INFO  JsonParser:42 - JobName: SampleJobName
+JobStatus: SUCCESS
+JobTime: 28.02.2018 10:08:16
+2018-02-28 11:03:01 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@7d19825c
+2018-02-28 11:03:29 INFO  EchoTask:27 - Wed Feb 28 11:03:29 CET 2018 running ...
+2018-02-28 11:03:29 INFO  JsonParser:35 - Response Code : 200
+2018-02-28 11:03:29 INFO  JsonParser:37 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519808896475}
+2018-02-28 11:03:29 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@35bd343c
+2018-02-28 11:03:36 INFO  EchoTask:27 - Wed Feb 28 11:03:36 CET 2018 running ...
+2018-02-28 11:03:36 INFO  JsonParser:37 - Response Code : 200
+2018-02-28 11:03:36 INFO  JsonParser:39 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519808896475}
+2018-02-28 11:03:36 INFO  JsonParser:42 - JobName: SampleJobName
+JobStatus: SUCCESS
+JobTime: 28.02.2018 10:08:16
+2018-02-28 11:03:36 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@7d19825c
+2018-02-28 11:04:37 INFO  EchoTask:27 - Wed Feb 28 11:04:37 CET 2018 running ...
+2018-02-28 11:04:38 INFO  JsonParser:35 - Response Code : 200
+2018-02-28 11:04:38 INFO  JsonParser:37 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519808896475}
+2018-02-28 11:04:38 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@43c320f0
+2018-02-28 11:07:06 INFO  EchoTask:27 - Wed Feb 28 11:07:06 CET 2018 running ...
+2018-02-28 11:07:06 INFO  JsonParser:34 - Response Code : 200
+2018-02-28 11:07:06 INFO  JsonParser:36 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519808896475}
+2018-02-28 11:07:06 INFO  JsonParser:39 - JobName: SampleJobName	JobStatus: SUCCESS	JobTime: 28.02.2018 10:08:16
+2018-02-28 11:07:06 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@5074490b
+2018-02-28 11:08:01 INFO  EchoTask:27 - Wed Feb 28 11:08:01 CET 2018 running ...
+2018-02-28 11:08:01 INFO  JsonParser:37 - Response Code : 200
+2018-02-28 11:08:01 INFO  JsonParser:39 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519808896475}
+2018-02-28 11:08:01 INFO  JsonParser:42 - JobName: SampleJobName
+JobStatus: SUCCESS
+JobTime: 28.02.2018 10:08:16
+2018-02-28 11:08:01 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@356f09a1
+2018-02-28 11:08:29 INFO  EchoTask:27 - Wed Feb 28 11:08:29 CET 2018 running ...
+2018-02-28 11:08:29 INFO  JsonParser:35 - Response Code : 200
+2018-02-28 11:08:29 INFO  JsonParser:37 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519808896475}
+2018-02-28 11:08:29 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@4b571e0c
+2018-02-28 11:08:36 INFO  EchoTask:27 - Wed Feb 28 11:08:36 CET 2018 running ...
+2018-02-28 11:08:36 INFO  JsonParser:37 - Response Code : 200
+2018-02-28 11:08:36 INFO  JsonParser:39 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519808896475}
+2018-02-28 11:08:36 INFO  JsonParser:42 - JobName: SampleJobName
+JobStatus: SUCCESS
+JobTime: 28.02.2018 10:08:16
+2018-02-28 11:08:36 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@356f09a1
+2018-02-28 11:09:37 INFO  EchoTask:27 - Wed Feb 28 11:09:37 CET 2018 running ...
+2018-02-28 11:09:37 INFO  JsonParser:35 - Response Code : 200
+2018-02-28 11:09:37 INFO  JsonParser:37 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519808896475}
+2018-02-28 11:09:37 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@265a6506
+2018-02-28 11:12:06 INFO  EchoTask:27 - Wed Feb 28 11:12:06 CET 2018 running ...
+2018-02-28 11:12:06 INFO  JsonParser:34 - Response Code : 200
+2018-02-28 11:12:06 INFO  JsonParser:36 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519808896475}
+2018-02-28 11:12:06 INFO  JsonParser:39 - JobName: SampleJobName	JobStatus: SUCCESS	JobTime: 28.02.2018 10:08:16
+2018-02-28 11:12:06 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@3e118a8
+2018-02-28 11:13:01 INFO  EchoTask:27 - Wed Feb 28 11:13:01 CET 2018 running ...
+2018-02-28 11:13:01 INFO  JsonParser:37 - Response Code : 200
+2018-02-28 11:13:01 INFO  JsonParser:39 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519808896475}
+2018-02-28 11:13:01 INFO  JsonParser:42 - JobName: SampleJobName
+JobStatus: SUCCESS
+JobTime: 28.02.2018 10:08:16
+2018-02-28 11:13:01 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@1b5e074
+2018-02-28 11:13:27 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-28 11:13:27 INFO  EchoTask:27 - Wed Feb 28 11:13:27 CET 2018 running ...
+2018-02-28 11:13:28 INFO  JsonParser:34 - Response Code : 200
+2018-02-28 11:13:28 INFO  JsonParser:38 - JobName: SampleJobName	JobStatus: SUCCESS	JobTime: 28.02.2018 10:08:16
+2018-02-28 11:13:28 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@6f135fd7
+2018-02-28 11:13:29 INFO  EchoTask:27 - Wed Feb 28 11:13:29 CET 2018 running ...
+2018-02-28 11:13:29 INFO  JsonParser:35 - Response Code : 200
+2018-02-28 11:13:29 INFO  JsonParser:37 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519808896475}
+2018-02-28 11:13:29 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@432d697a
+2018-02-28 11:13:36 INFO  EchoTask:27 - Wed Feb 28 11:13:36 CET 2018 running ...
+2018-02-28 11:13:36 INFO  JsonParser:37 - Response Code : 200
+2018-02-28 11:13:36 INFO  JsonParser:39 - {"jobName":"SampleJobName","jobStatus":"SUCCESS","jobTime":1519808896475}
+2018-02-28 11:13:36 INFO  JsonParser:42 - JobName: SampleJobName
+JobStatus: SUCCESS
+JobTime: 28.02.2018 10:08:16
+2018-02-28 11:13:36 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@1b5e074
+2018-02-28 11:13:52 INFO  EchoTask:22 - Amount of observers: 2
+2018-02-28 11:13:52 INFO  EchoTask:27 - Wed Feb 28 11:13:52 CET 2018 running ...
+2018-02-28 11:13:53 INFO  JsonParser:34 - Response Code : 200
+2018-02-28 11:13:53 INFO  JsonParser:38 - JobName: SampleJobName	JobStatus: SUCCESS	JobTime: 28.02.2018 10:08:16
+2018-02-28 11:13:53 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@6f135fd7
+2018-02-28 11:18:52 INFO  EchoTask:27 - Wed Feb 28 11:18:52 CET 2018 running ...
+2018-02-28 11:18:52 INFO  JsonParser:34 - Response Code : 200
+2018-02-28 11:18:52 INFO  JsonParser:38 - JobName: SampleJobName	JobStatus: SUCCESS	JobTime: 28.02.2018 10:08:16
+2018-02-28 11:18:52 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@6612852d
+2018-02-28 11:23:52 INFO  EchoTask:27 - Wed Feb 28 11:23:52 CET 2018 running ...
+2018-02-28 11:23:52 INFO  JsonParser:34 - Response Code : 200
+2018-02-28 11:23:52 INFO  JsonParser:38 - JobName: SampleJobName	JobStatus: SUCCESS	JobTime: 28.02.2018 10:08:16
+2018-02-28 11:23:52 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@6d0f1b80
+2018-02-28 11:28:52 INFO  EchoTask:27 - Wed Feb 28 11:28:52 CET 2018 running ...
+2018-02-28 11:28:52 INFO  JsonParser:34 - Response Code : 200
+2018-02-28 11:28:52 INFO  JsonParser:38 - JobName: SampleJobName	JobStatus: SUCCESS	JobTime: 28.02.2018 10:08:16
+2018-02-28 11:28:52 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@6e6556d8
+2018-02-28 11:33:52 INFO  EchoTask:27 - Wed Feb 28 11:33:52 CET 2018 running ...
+2018-02-28 11:33:52 INFO  JsonParser:34 - Response Code : 200
+2018-02-28 11:33:52 INFO  JsonParser:38 - JobName: SampleJobName	JobStatus: SUCCESS	JobTime: 28.02.2018 10:08:16
+2018-02-28 11:33:52 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@63b131e3
+2018-02-28 11:38:52 INFO  EchoTask:27 - Wed Feb 28 11:38:52 CET 2018 running ...
+2018-02-28 11:38:52 INFO  JsonParser:34 - Response Code : 200
+2018-02-28 11:38:52 INFO  JsonParser:38 - JobName: SampleJobName	JobStatus: SUCCESS	JobTime: 28.02.2018 10:08:16
+2018-02-28 11:38:52 INFO  ConsoleNotifier:12 - Result of last poll: ch.loewenfels.raspberrybuildnotifier.BuildInformationDto@339b028e
