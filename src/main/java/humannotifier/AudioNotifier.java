@@ -31,7 +31,7 @@ public class AudioNotifier extends HumanNotifier {
             break;
         case ERROR:
             LOGGER.error("Job Status Error");
-            final String errorNofierName = "errorNotifier.mp3";
+            final String errorNofierName = "errorNotifier.wav";
             final ClassLoader classLoaderError = getClass().getClassLoader();
             final File errorNofierFile = new File(classLoaderError.getResource(errorNofierName).getFile());
             //final Process process = null;
