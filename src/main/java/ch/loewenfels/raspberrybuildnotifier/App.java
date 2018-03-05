@@ -6,10 +6,11 @@ import org.apache.commons.daemon.Daemon;
 import org.apache.commons.daemon.DaemonContext;
 import org.apache.commons.daemon.DaemonInitException;
 import org.apache.log4j.BasicConfigurator;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class App implements Daemon {
-    private static final Logger LOGGER = Logger.getLogger(App.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
     private static Timer timer = null;
 
     public static void main(final String[] args) {
