@@ -36,8 +36,7 @@ public class JsonParser {
             final Gson gson = new GsonBuilder().registerTypeAdapter(Date.class, UnixEpochDateTypeAdaptersd.getUnixEpochDateTypeAdapter()).create();
             final BuildInformationDto buildInformationDto = gson.fromJson(string, BuildInformationDto.class);
             LOGGER.debug("JobInfo: {}", buildInformationDto);
-            throw new NullPointerException();
-            //return Optional.of(buildInformationDto);
+            return Optional.of(buildInformationDto);
         } catch (final ParseException | IOException | NullPointerException e) {
             LOGGER.error("Can not parse BuildInformation: {}", e);
             return Optional.empty();
