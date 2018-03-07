@@ -1,7 +1,6 @@
 package ch.loewenfels.raspberrybuildnotifier;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public class BuildInformationDto {
     public enum JobStatus {
@@ -10,15 +9,12 @@ public class BuildInformationDto {
 
     private String jobName;
     private JobStatus jobStatus;
-    private Date jobTime;
+    private LocalDateTime jobTimeLocal;
 
-    public BuildInformationDto(final String jobName, final JobStatus jobStatus, final Date jobTime) {
+    public BuildInformationDto(final String jobName, final JobStatus jobStatus, final LocalDateTime jobTimeLocal) {
         this.jobName = jobName;
         this.jobStatus = jobStatus;
-        this.jobTime = jobTime;
-    }
-
-    public BuildInformationDto() {
+        this.jobTimeLocal = jobTimeLocal;
     }
 
     public String getJobName() {
@@ -37,21 +33,16 @@ public class BuildInformationDto {
         this.jobStatus = jobStatus;
     }
 
-    public Date getJobTime() {
-        return jobTime;
+    public LocalDateTime getJobTime() {
+        return jobTimeLocal;
     }
 
-    public void setJobTime(final Date jobTime) {
-        this.jobTime = jobTime;
+    public void setJobTime(final LocalDateTime jobTimeLocal) {
+        this.jobTimeLocal = jobTimeLocal;
     }
 
     @Override
     public String toString() {
-        return "JobName: " + getJobName() + "\tJobStatus: " + getJobStatus() + "\tJobTime: " + getFormattedDate(this);
-    }
-
-    private static String getFormattedDate(final BuildInformationDto buildInformationDto) {
-        final SimpleDateFormat format = new SimpleDateFormat("dd.MM.yyy HH:mm:ss");
-        return format.format(buildInformationDto.getJobTime());
+        return "JobName: " + getJobName() + "\tJobStatus: " + getJobStatus() + "\tJobTime: " + jobTimeLocal;
     }
 }
