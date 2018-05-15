@@ -1,11 +1,9 @@
 package ch.loewenfels.raspberrybuildnotifier.serverpoller;
 
-import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
 import org.apache.http.HttpResponse;
-import org.apache.http.ParseException;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
@@ -36,13 +34,13 @@ public class JsonParser {
             final BuildInformationDto buildInformationDto = parse(string);
             LOGGER.debug("JobInfo: {}", buildInformationDto);
             return Optional.of(buildInformationDto);
-        } catch (final ParseException | IOException | NullPointerException e) {
+        } catch (final Exception e) {
             LOGGER.error("Can not parse BuildInformation: {}", e);
             return Optional.empty();
         }
     }
 
-    BuildInformationDto parse(final String string) {
+    BuildInformationDto parse(final String string) throws Exception {
         final Gson gson = new GsonBuilder().registerTypeAdapter(LocalDateTime.class, new LocalDateTimeDeserializer()).create();
         return gson.fromJson(string, BuildInformationDto.class);
     }

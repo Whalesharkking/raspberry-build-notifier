@@ -21,30 +21,26 @@ public class AudioNotifier extends HumanNotifier {
             final String wavFailure = "build-failed.wav";
             notifie(wavFailure, JobStatus.FAILURE);
             break;
-        case ERROR:
+        case SUCCESS:
+            break;
+        default:
             final String wavError = "build-failed.wav";
             notifie(wavError, JobStatus.ERROR);
-            break;
-        case SUCCESS:
             break;
         }
     }
 
-    private void notifie(final String wavName, final JobStatus failure) {
-        LOGGER.info("JobStatus: {}", failure);
-        textToSpeechJobName();
+    private void notifie(final String wavName, final JobStatus jobStatus) {
+        LOGGER.info("JobStatus: {}", jobStatus);
         final ClassLoader classLoader = getClass().getClassLoader();
         final File wavFile = new File(classLoader.getResource(wavName).getFile());
         try {
-            if (buildInformationDto.getJobStatus().equals(failure)) {
+            if (buildInformationDto.getJobStatus().equals(jobStatus)) {
                 final ProcessBuilder processBuilder = new ProcessBuilder("bash", "-c", "aplay " + wavFile.getAbsolutePath());
                 processBuilder.start();
             }
         } catch (final IOException e) {
             LOGGER.error("IO Error occurred on exec process: {}", e);
         }
-    }
-
-    private void textToSpeechJobName() {
     }
 }
