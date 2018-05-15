@@ -7,7 +7,6 @@ import ch.loewenfels.raspberrybuildnotifier.BuildInformationDto;
 public class GoogleAppEnginePoller extends Poller {
     @Override
     protected Optional<BuildInformationDto> pollLatestBuildState() {
-        final JsonParser parser = new JsonParser();
-        return parser.get();
+        return new JsonParser().get();
     }
 }
