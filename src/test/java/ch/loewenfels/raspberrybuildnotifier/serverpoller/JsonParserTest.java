@@ -4,6 +4,8 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
 import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Optional;
 
 import org.junit.Test;
 
@@ -29,19 +31,20 @@ public class JsonParserTest {
         assertThat(result.getJobTime(), equalTo(LocalDateTime.of(2018, 3, 7, 8, 30, 20)));
     }
 
-    //    @Test
-    //    public void jsonParseGet_whenCanNotFindJob_thenResultMuesBeError() {
-    //        //arrange
-    //        Optional<BuildInformationDto> optional = null;
-    //        try {
-    //            optional = new JsonParser().get();
-    //        } catch (final Exception e) {
-    //            // TODO Auto-generated catch block
-    //            e.printStackTrace();
-    //        }
-    //        //assert
-    //        assertTrue(optional.isPresent());
-    //    }
+    @Test
+    public void jsonParseGet_whenCanNotFindJob_thenResultMuesBeError() {
+        //arrange
+        List<Optional<BuildInformationDto>> optional = null;
+        try {
+            optional = new JsonParser().get();
+        } catch (final Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        //assert
+        assertTrue(optional.get(0).isPresent());
+    }
+
     @Test
     public void jsonParse_whenIsInvalidJobTimeLocal_thenResultMuesBeNull() throws Exception {
         //arrange

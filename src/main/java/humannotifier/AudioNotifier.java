@@ -24,7 +24,7 @@ public class AudioNotifier extends HumanNotifier {
         case SUCCESS:
             break;
         default:
-            final String wavError = "build-failed.wav";
+            final String wavError = "errorNotifier.wav";
             notifie(wavError, JobStatus.ERROR);
             break;
         }

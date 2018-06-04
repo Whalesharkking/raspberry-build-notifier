@@ -14,6 +14,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import ch.loewenfels.raspberrybuildnotifier.BuildInformationDto;
+import ch.loewenfels.raspberrybuildnotifier.BuildInformationDto.JobStatus;
 import ch.loewenfels.raspberrybuildnotifier.ResponsilbleJobs;
 
 import com.google.gson.Gson;
@@ -28,9 +29,11 @@ public class JsonParser {
         //final String serverUrl = "unified-skein-195809.appspot.com";
         final String serverUrl = "localhost:8080";
         final List<Optional<BuildInformationDto>> optinalBuildInfortmationList = new ArrayList<>();
-        try {
-            for (final String jobName : getJobName(serverUrl)) {
+        String aJobName = "empty";
+        for (final String jobName : getJobName(serverUrl)) {
+            try {
                 LOGGER.error(jobName);
+                aJobName = jobName;
                 final String url = String.format("http://%s/rest/build/get/%s", serverUrl, jobName);
                 final HttpClient client = HttpClientBuilder.create().build();
                 final HttpGet request = new HttpGet(url);
@@ -41,12 +44,12 @@ public class JsonParser {
                 final BuildInformationDto buildInformationDto = parseBuildInformation(string);
                 LOGGER.debug("JobInfo: {}", buildInformationDto);
                 optinalBuildInfortmationList.add(Optional.of(buildInformationDto));
+            } catch (final Exception e) {
+                LOGGER.error("Can not parse BuildInformation: {}", e);
+                optinalBuildInfortmationList.add(Optional.of(new BuildInformationDto(aJobName, JobStatus.ERROR, LocalDateTime.now())));
             }
-            return optinalBuildInfortmationList;
-        } catch (final Exception e) {
-            LOGGER.error("Can not parse BuildInformation: {}", e);
-            return optinalBuildInfortmationList;
         }
+        return optinalBuildInfortmationList;
     }
 
     private List<String> getJobName(final String serverUrl) {
