@@ -16,7 +16,11 @@
     </properties>
 
     <dependencies>
-
+        <dependency>                    
+            <groupId>com.google.cloud</groupId>
+            <artifactId>google-cloud</artifactId>
+            <version>0.47.0-alpha</version>
+        </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
@@ -60,7 +64,46 @@
             <version>1.2.3</version>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>org.mobicents.external.freetts</groupId>
+            <artifactId>cmulex</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mobicents.external.freetts</groupId>
+            <artifactId>en_us</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mobicents.external.freetts</groupId>
+            <artifactId>cmu_time_awb</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mobicents.external.freetts</groupId>
+            <artifactId>cmutimelex</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mobicents.external.freetts</groupId>
+            <artifactId>freetts</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mobicents.external.freetts</groupId>
+            <artifactId>cmu_us_kal</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mobicents.external.freetts</groupId>
+            <artifactId>cmudict04</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mobicents.external.freetts</groupId>
+            <artifactId>mbrola</artifactId>
+            <version>1.2.2</version>
+        </dependency>
     </dependencies>
 
     <profiles>

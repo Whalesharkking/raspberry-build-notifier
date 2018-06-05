@@ -54,7 +54,7 @@ public class JsonParser {
 
     private List<String> getJobName(final String serverUrl) {
         try {
-            final String url = String.format("http://%s/rest/build/responsibleJobs/%s", serverUrl, PINR);
+            final String url = String.format("http://%s/rest/build/get/responsibleJobs/%s", serverUrl, PINR);
             final HttpClient client = HttpClientBuilder.create().build();
             final HttpGet request = new HttpGet(url);
             request.addHeader("User-Agent", USER_AGENT);

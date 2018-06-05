@@ -16,17 +16,30 @@ public class AudioNotifier extends HumanNotifier {
     @Override
     protected void notifyHumanBeing(final BuildInformationDto dto) {
         buildInformationDto = dto;
+        threadSleep();
         switch (dto.getJobStatus()) {
         case FAILURE:
             final String wavFailure = "build-failed.wav";
+            threadSleep();
+            new FreeTTS(dto.getJobName() + " Failed").speak();
             notifie(wavFailure, JobStatus.FAILURE);
             break;
         case SUCCESS:
             break;
         default:
+            new FreeTTS(dto.getJobName() + " Have a Problem").speak();
+            threadSleep();
             final String wavError = "errorNotifier.wav";
             notifie(wavError, JobStatus.ERROR);
             break;
+        }
+    }
+
+    private void threadSleep() {
+        try {
+            Thread.sleep(1000);
+        } catch (final Exception e) {
+            LOGGER.error("Thread sleep Exception {}", e);
         }
     }
 
