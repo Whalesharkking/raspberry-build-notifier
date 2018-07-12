@@ -15,7 +15,6 @@ import org.slf4j.LoggerFactory;
 
 import ch.loewenfels.raspberrybuildnotifier.BuildInformationDto;
 import ch.loewenfels.raspberrybuildnotifier.BuildInformationDto.JobStatus;
-import ch.loewenfels.raspberrybuildnotifier.ResponsilbleJobs;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -26,24 +25,27 @@ public class JsonParser {
     private static String PINR = "PI1";
 
     public List<Optional<BuildInformationDto>> get() {
-        //final String serverUrl = "unified-skein-195809.appspot.com";
-        final String serverUrl = "localhost:8080";
+        final String serverUrl = "unified-skein-195809.appspot.com";
         final List<Optional<BuildInformationDto>> optinalBuildInfortmationList = new ArrayList<>();
         String aJobName = "empty";
         for (final String jobName : getJobName(serverUrl)) {
             try {
                 LOGGER.error(jobName);
                 aJobName = jobName;
-                final String url = String.format("http://%s/rest/build/get/%s", serverUrl, jobName);
+                final String url = String.format("https://%s/rest/build/get/%s", serverUrl, jobName);
                 final HttpClient client = HttpClientBuilder.create().build();
                 final HttpGet request = new HttpGet(url);
                 request.addHeader("User-Agent", USER_AGENT);
                 final HttpResponse response = client.execute(request);
                 LOGGER.debug("Response Code: {}", response.getStatusLine().getStatusCode());
-                final String string = EntityUtils.toString(response.getEntity());
-                final BuildInformationDto buildInformationDto = parseBuildInformation(string);
-                LOGGER.debug("JobInfo: {}", buildInformationDto);
-                optinalBuildInfortmationList.add(Optional.of(buildInformationDto));
+                if (response.getStatusLine().getStatusCode() == 200) {
+                    final String string = EntityUtils.toString(response.getEntity());
+                    final BuildInformationDto buildInformationDto = parseBuildInformation(string);
+                    LOGGER.debug("JobInfo: {}", buildInformationDto);
+                    optinalBuildInfortmationList.add(Optional.of(buildInformationDto));
+                } else {
+                    LOGGER.error("Zum gewünschten Job: {} wurde kein Jobstatus-Resultat gefunden", jobName);
+                }
             } catch (final Exception e) {
                 LOGGER.error("Can not parse BuildInformation: {}", e);
                 optinalBuildInfortmationList.add(Optional.of(new BuildInformationDto(aJobName, JobStatus.ERROR, LocalDateTime.now())));
@@ -52,21 +54,23 @@ public class JsonParser {
         return optinalBuildInfortmationList;
     }
 
-    private List<String> getJobName(final String serverUrl) {
+    private String[] getJobName(final String serverUrl) {
         try {
-            final String url = String.format("http://%s/rest/build/get/responsibleJobs/%s", serverUrl, PINR);
+            final String url = String.format("https://%s/rest/build/responsibleJobs/get/%s", serverUrl, PINR);
             final HttpClient client = HttpClientBuilder.create().build();
             final HttpGet request = new HttpGet(url);
             request.addHeader("User-Agent", USER_AGENT);
             final HttpResponse response = client.execute(request);
             LOGGER.debug("Response Code: {}", response.getStatusLine().getStatusCode());
             final String string = EntityUtils.toString(response.getEntity());
-            final ResponsilbleJobs responsibleJobs = parseResponsilble(string);
+            System.out.println(string);
+            final String[] responsibleJobs = parseResponsilble(string);
             LOGGER.debug("Responsible: {}", responsibleJobs);
-            return responsibleJobs.getResponsibleList();
+            return responsibleJobs;
         } catch (final Exception e) {
             LOGGER.error("Can not parse RespnsiblePI: {}", e);
-            return new ArrayList<>();
+            final String[] testee = null;
+            return testee;
         }
     }
 
@@ -75,8 +79,8 @@ public class JsonParser {
         return gson.fromJson(string, BuildInformationDto.class);
     }
 
-    ResponsilbleJobs parseResponsilble(final String string) throws Exception {
+    String[] parseResponsilble(final String string) throws Exception {
         final Gson gson = new Gson();
-        return gson.fromJson(string, ResponsilbleJobs.class);
+        return gson.fromJson(string, String[].class);
     }
 }
