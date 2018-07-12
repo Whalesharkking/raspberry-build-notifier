@@ -30,7 +30,7 @@ public class JsonParser {
         String aJobName = "empty";
         for (final String jobName : getJobName(serverUrl)) {
             try {
-                LOGGER.error(jobName);
+                LOGGER.info(jobName);
                 aJobName = jobName;
                 final String url = String.format("https://%s/rest/build/get/%s", serverUrl, jobName);
                 final HttpClient client = HttpClientBuilder.create().build();
@@ -63,12 +63,11 @@ public class JsonParser {
             final HttpResponse response = client.execute(request);
             LOGGER.debug("Response Code: {}", response.getStatusLine().getStatusCode());
             final String string = EntityUtils.toString(response.getEntity());
-            System.out.println(string);
             final String[] responsibleJobs = parseResponsilble(string);
             LOGGER.debug("Responsible: {}", responsibleJobs);
             return responsibleJobs;
         } catch (final Exception e) {
-            LOGGER.error("Can not parse RespnsiblePI: {}", e);
+            LOGGER.error("Can not parse ResponsiblePI: {}", e);
             final String[] testee = null;
             return testee;
         }
