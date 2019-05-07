@@ -9,12 +9,12 @@ public class BuildInformationDto {
 
     private String jobName;
     private JobStatus jobStatus;
-    private LocalDateTime jobTimeLocal;
+    private LocalDateTime jobLocalDateTime;
 
-    public BuildInformationDto(final String jobName, final JobStatus jobStatus, final LocalDateTime jobTimeLocal) {
+    public BuildInformationDto(String jobName, JobStatus jobStatus, LocalDateTime jobLocalDateTime) {
         this.jobName = jobName;
         this.jobStatus = jobStatus;
-        this.jobTimeLocal = jobTimeLocal;
+        this.jobLocalDateTime = jobLocalDateTime;
     }
 
     public String getJobName() {
@@ -37,8 +37,8 @@ public class BuildInformationDto {
         return jobTimeLocal;
     }
 
-    public void setJobTime(final LocalDateTime jobTimeLocal) {
-        this.jobTimeLocal = jobTimeLocal;
+    public void setJobLocalDateTime(LocalDateTime jobLocalDateTime) {
+        this.jobLocalDateTime = jobLocalDateTime;
     }
 
     @Override
